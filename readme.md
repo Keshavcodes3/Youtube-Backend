@@ -48,7 +48,7 @@ This YouTube Backend Application is a full-featured REST API that handles the co
 - **File Upload**: Multer with Cloudinary
 - **Email Service**: Nodemailer
 - **Validation**: express-validator
-- **Development**: tsx (TypeScript executor)
+
 
 ---
 
