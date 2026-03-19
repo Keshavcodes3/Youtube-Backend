@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema({
     },
     subscribedChannel: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "User"
+        ref: "Channel"
     }]
 
 }, { timestamps: true })

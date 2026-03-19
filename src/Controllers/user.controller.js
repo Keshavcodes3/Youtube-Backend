@@ -177,10 +177,10 @@ export async function userUpdateAccount(req, res) {
             message: "Account updated successfully",
             success: true,
             data: {
-                id: user._id,
-                channelName: user.channelName,
-                email: user.email,
-                phone: user.phone,
+                id: User._id,
+                channelName: User.channelName,
+                email: User.email,
+                phone: User.phone,
             },
         });
     } catch (err) {

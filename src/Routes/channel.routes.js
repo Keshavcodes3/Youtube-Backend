@@ -12,7 +12,7 @@ const channelRouter=express.Router()
 
 channelRouter.get('/me',IdentifyUser,getAllMychannels)
 
-channelRouter.post('/',IdentifyUser,upload.single("logo"),createChannel)
+channelRouter.post('/createChannel',IdentifyUser,upload.single("logo"),createChannel)
 
 channelRouter.delete('/:channelId',IdentifyUser,deleteChannel)
 
@@ -20,9 +20,9 @@ channelRouter.get('/',getAllChannels)
 
 channelRouter.get('/search/:channelId',getchannelBySearch)
 
-channelRouter.post('/:channelId',IdentifyUser,subscribeAndunsubscribeController)
+channelRouter.post('/subscribe/:channelId',IdentifyUser,subscribeAndunsubscribeController)
 
-channelRouter.get('/subscribed',IdentifyUser,subscribedChannel)
+channelRouter.get('/subscribe/getsubscribed',IdentifyUser,subscribedChannel)
 
 
 export default channelRouter
