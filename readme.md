@@ -57,7 +57,7 @@ This YouTube Backend Application is a full-featured REST API that handles the co
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repository-url>
+git clone "https://github.com/Keshavcodes3/Youtube-Backend.git"
 cd Youtube-Backend-App
 npm install
 ```
